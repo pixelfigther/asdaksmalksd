@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE/barış</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Didot&display=swap">
+    <link rel="stylesheet" href="style/run.css">
+</head>
+<body>
+    <div>
+    <p>Benimle barışır mısın ?</p>
+        <button onclick="alert('BİLİYORDUM!!!!')">EVET</button>
+        <button id="move" onmouseover="runaway(this)">HAYIR</button>
+        <script>
+        function runaway(id) {
+            id.style.top = Math.round(Math.random() * 250) - 100 + 'px';
+            id.style.left = Math.round(Math.random() * 250) - 200 + 'px';
+        }
+    </script>
+    </div>
+</body>
+</html>
